@@ -13,6 +13,21 @@
     rgba(0, 0, 0, 0) 100%
   );
 }
+.header .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 6px 20px;
+  border-radius: 12px;
+  background: #306b1b;
+}
 .navItem {
   color: #fff;
   border-radius: 20px;
@@ -46,7 +61,11 @@
   color: #1a1c18;
   background: #d8e7cb;
 }
-
+@media only screen and (max-width: 1027px) {
+  .header {
+    padding: 0 16px;
+  }
+}
 @media only screen and (max-width: 639px) {
   .header {
     padding: 0 16px;

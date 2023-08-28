@@ -20,7 +20,11 @@ export const Knowledge = () => {
       <div className="p-4">
         <div className={style.post}>
           <div className="w-full overflow-hidden h-52 rounded-[32px] mb-3">
-            <img src={image} className="object-cover object-center" alt="" />
+            <img
+              src={image}
+              className="object-cover object-center h-full"
+              alt=""
+            />
           </div>
           <p className={style.date}>{date}</p>
           <h3 className={style.title}>{title}</h3>

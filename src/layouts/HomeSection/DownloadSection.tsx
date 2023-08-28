@@ -7,7 +7,7 @@ import style from "../../assets/styles/section.module.css";
 
 export const DownloadSection = () => {
   return (
-    <div className={style.section}>
+    <div className={style.section} id="download">
       <div className="w-full flex flex-row sm:flex-col gap-[130px] items-center sm:gap-4 py-16 px-16 sm:p-8 sm:bg-[#E6F6D9] relative rounded-[48px] z-[2]">
         <div className="absolute left-0 h-1/2 w-full bg-[#E6F6D9] sm:bg-transparent rounded-[48px] z-[1]"></div>
         <div className="w-2/3 sm:w-full z-[2]">

@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import { Carousel } from "../../components/Carousel";
 import style from "../../assets/styles/section.module.css";
 import styleCarousel from "../../assets/styles/carousel.module.css";
@@ -37,7 +37,7 @@ export const NewsSection = () => {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <Carousel autoplaySpeed={1000000000}>
+      <Carousel autoplaySpeed={1000000000} showArrows={true}>
         <MiniPost
           image={News_1}
           date="08/08/2023"

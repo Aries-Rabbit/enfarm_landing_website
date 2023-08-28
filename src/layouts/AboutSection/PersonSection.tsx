@@ -31,7 +31,7 @@ export const PersonSection = () => {
   return (
     <div>
       <TittleSection title="Gặp gỡ founder" />
-      <div className="w-2/3 mx-auto flex sm:w-full justify-around sm:gap-2">
+      <div className="w-1/2 mx-auto flex sm:w-full justify-between sm:gap-2">
         <CardInfor
           image={avt_co_founder}
           description="Short description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -44,6 +44,12 @@ export const PersonSection = () => {
           name="Hồ Long Phi"
           role="CEO"
         />
+      </div>
+      <div className="w-1/2 mx-auto">
+        <h2 className="text-[#C3C8BB] text-[32px] text-center mt-10">
+          Quote: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore.
+        </h2>
       </div>
     </div>
   );

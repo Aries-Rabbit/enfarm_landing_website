@@ -143,3 +143,49 @@ export const MenuMobileBlack = ({ className = "" }) => (
     />
   </svg>
 );
+export const ArrowLeft = ({ className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={28}
+    height={28}
+    fill="none"
+    className={twMerge("", className)}
+  >
+    <path
+      fill="#8D9387"
+      fillRule="evenodd"
+      d="M18.325 4.425a1.167 1.167 0 0 1 0 1.65L10.4 14l7.925 7.925a1.167 1.167 0 0 1-1.65 1.65l-8.75-8.75a1.167 1.167 0 0 1 0-1.65l8.75-8.75a1.167 1.167 0 0 1 1.65 0Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+export const ArrowRight = ({ className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={28}
+    height={28}
+    fill="none"
+    className={twMerge("", className)}
+  >
+    <path
+      fill="#8D9387"
+      fillRule="evenodd"
+      d="M9.675 4.425a1.167 1.167 0 0 1 1.65 0l8.75 8.75a1.167 1.167 0 0 1 0 1.65l-8.75 8.75a1.167 1.167 0 0 1-1.65-1.65L17.6 14 9.675 6.075a1.167 1.167 0 0 1 0-1.65Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);
+export const DownloadIcon = ({ className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={20}
+    height={20}
+    fill="none"
+    className={twMerge("", className)}
+  >
+    <path
+      fill="#fff"
+      d="M4.167 16.667h11.666V15H4.167v1.667ZM15.833 7.5H12.5v-5h-5v5H4.167L10 13.333 15.833 7.5Z"
+    />
+  </svg>
+);
