@@ -1,0 +1,96 @@
+.section {
+  padding: 32px 120px;
+  width: 100%;
+}
+.section h1 {
+  color: #306b1b;
+}
+/* feature */
+.content_parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.content_child {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  width: 30%;
+}
+.feature_item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  gap: 8px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.1);
+}
+.feature_item h4 {
+  color: #306b1b;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+/*  */
+/* product */
+.product_usp {
+  color: #306b1b;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+/* vison */
+.vision {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../images/img/sunny-meadow-land.jpeg"),
+    lightgray 0px -71.871px / 100% 119.637% no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.vision h1 {
+  color: #ffffff;
+}
+.vision path {
+  fill: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+  .section {
+    padding: 72px 16px;
+  }
+  .section h1 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  /* feature */
+  .content_parent {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .content_child {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .content_child:nth-child(2) {
+    order: -1;
+  }
+  /*  */
+  .product_usp {
+    color: #306b1b;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}

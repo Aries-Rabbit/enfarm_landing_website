@@ -1,0 +1,75 @@
+import React, { useState } from "react";
+import style from "../../assets/styles/header.module.css";
+import ScrollEvent from "../../hooks/ScrollEvent";
+import logo_enfarm from "../../assets/images/img/logo_enfarm.png";
+import logo_enfarm_green from "../../assets/images/img/logo_enfarm_green.png";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setActivePage } from "../../redux/layoutSlice";
+import { MenuMobileBlack, MenuMobileWhite } from "../../assets/images/svg/Icon";
+import { HeaderMobile } from "./HeaderMobile";
+interface NavigationProps {
+  navItem: string;
+  link: string;
+  page: number;
+}
+export const Header = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const activePage = useSelector((state: any) => state.layoutSlice.activePage);
+  const { scrollDirection, isInverted } = ScrollEvent();
+  const Navigation = ({ navItem, link, page }: NavigationProps) => {
+    return (
+      <div
+        onClick={() => {
+          navigate(link);
+          dispatch(setActivePage(page));
+        }}
+        className={`${style.navItem} ${
+          activePage === page ? style.active : ""
+        }`}
+      >
+        {navItem}
+      </div>
+    );
+  };
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <HeaderMobile isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div
+        className={`${style.header} ${
+          scrollDirection === "down" ? style.down : style.up
+        } ${isInverted ? style.inverted : ""}`}
+      >
+        <div className="w-full flex justify-between items-center">
+          <img
+            src={isInverted ? logo_enfarm_green : logo_enfarm}
+            className="h-16"
+            alt="logo enfarm"
+          />
+          <div className="flex items-center gap-4 mx-8 sm:hidden">
+            <Navigation navItem="Trang chủ" link="/" page={0} />
+            <Navigation navItem="Về chúng tôi" link="/about" page={1} />
+            <Navigation navItem="Sản phẩm" link="/product" page={2} />
+            <Navigation navItem="Tri thức" link="/knowledge" page={3} />
+          </div>
+          <div
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            className="hidden sm:block sm:z-10"
+          >
+            {isInverted ? <MenuMobileBlack /> : <MenuMobileWhite />}
+          </div>
+          <div
+            className={`${isInverted ? "text-black" : "text-white"} sm:hidden`}
+          >
+            VI | EN
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
