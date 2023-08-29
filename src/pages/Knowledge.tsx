@@ -22,7 +22,7 @@ export const Knowledge = () => {
           <div className="w-full overflow-hidden h-52 rounded-[32px] mb-3">
             <img
               src={image}
-              className="object-cover object-center h-full"
+              className="object-cover object-top h-full w-full"
               alt=""
             />
           </div>

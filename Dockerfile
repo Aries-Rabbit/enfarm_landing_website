@@ -1,10 +1,20 @@
-FROM node:18.14.2-alpine
+# Sử dụng node:latest image làm base image
+FROM node:latest
+
+# Đặt thư mục làm thư mục làm việc trong container
 WORKDIR /app
-COPY package.json .
-COPY yarn.lock .
-COPY . .
-RUN yarn install --network-timeout 1000000
+
+# Copy package.json và yarn.lock vào thư mục làm việc
+COPY package.json yarn.lock ./
+
+# Cài đặt các gói phụ thuộc
 RUN yarn install
-RUN yarn run build production
-RUN yarn global add serve
-CMD serve -s build
+
+# Copy tất cả các file trong thư mục hiện tại vào thư mục làm việc
+COPY . .
+
+# Build ứng dụng React
+RUN yarn build
+
+# Chạy ứng dụng React trong môi trường production
+CMD ["yarn", "start"]
