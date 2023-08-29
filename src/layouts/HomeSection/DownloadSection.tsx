@@ -12,7 +12,7 @@ export const DownloadSection = () => {
         <div className="absolute left-0 h-1/2 w-full bg-[#E6F6D9] sm:bg-transparent rounded-[48px] z-[1]"></div>
         <div className="w-2/3 sm:w-full z-[2]">
           <div className="w-16 h-16 rounded-2xl flex justify-center items-center bg-white">
-            <img src={enfarm_logo} alt="enfarm logo" />
+            <img loading="lazy" src={enfarm_logo} alt="enfarm logo" />
           </div>
           <div>
             <h1 className="my-4 text-left">Tải ứng dụng ngay</h1>
@@ -21,13 +21,13 @@ export const DownloadSection = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </article>
             <div className="w-full flex sm:w-1/3 mt-9 gap-4">
-              <img src={gg_play} alt="" />
-              <img src={app_store} alt="" />
+              <img loading="lazy" src={gg_play} alt="" />
+              <img loading="lazy" src={app_store} alt="" />
             </div>
           </div>
         </div>
         <div className="w-1/3 sm:w-full z-[2] sm:hidden">
-          <img src={screen_phone} alt="" />
+          <img loading="lazy" src={screen_phone} alt="" />
         </div>
       </div>
     </div>

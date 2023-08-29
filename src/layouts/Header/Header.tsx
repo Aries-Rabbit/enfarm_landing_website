@@ -49,6 +49,18 @@ export const Header = () => {
   };
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleButtonClickDownload = () => {
+    navigate("/");
+    dispatch(setActivePage(0));
+
+    setTimeout(() => {
+      const downloadElement = document.getElementById("download");
+      if (downloadElement) {
+        downloadElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+  };
+
   return (
     <>
       <HeaderMobile isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -59,8 +71,12 @@ export const Header = () => {
       >
         <div className="w-full flex justify-between items-center">
           <img
+            onClick={() => {
+              navigate("/");
+              handleToTop();
+            }}
             src={isInverted ? logo_enfarm_green : logo_enfarm}
-            className="h-16"
+            className="h-16 cursor-pointer"
             alt="logo enfarm"
           />
           <div className="flex items-center gap-4 mx-8 lg:hidden sm:hidden">
@@ -93,7 +109,10 @@ export const Header = () => {
                 offset={50}
                 duration={1500}
               >
-                <button className={style.btn}>
+                <button
+                  onClick={handleButtonClickDownload}
+                  className={style.btn}
+                >
                   Download
                   <DownloadIcon />
                 </button>

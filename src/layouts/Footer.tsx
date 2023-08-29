@@ -21,6 +21,12 @@ const FooterItem = ({ title, href }: ItemProps) => {
     </div>
   );
 };
+const handleMailTo = (mail: string) => {
+  window.location.href = mail;
+};
+const handlePhoneTo = (phone: string) => {
+  window.open(`tel:${phone}`);
+};
 const Footer = () => {
   return (
     <footer className={style.container}>
@@ -37,26 +43,28 @@ const Footer = () => {
               <LinkedinIcon />
             </div>
           </div>
-          <div className="flex gap-32">
+          {/* <div className="flex gap-32">
             <FooterItem title="About us" href={["For Investors", "Careers"]} />
             <FooterItem
               title="Products"
               href={["enFarm", "enGIS", "enGIA", "enData"]}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={style.footer_copyright}>
         <div className="flex sm:flex-col sm:gap-2">
-          <p className="w-3/5 sm:w-full">
-            © Ensightful Technology Company Limited
-          </p>
+          <p className="w-3/5 sm:w-full">© enfarm Agritech Pte. Ltd.</p>
           <div className="w-2/5 sm:w-full flex justify-between">
-            <button>
-              <p>Hotline 1900 6079</p>
+            <button onClick={() => window.open("tel:18009080")}>
+              <p>Hotline 1800 9080</p>
             </button>
-            <button>
-              <p>hr@ensightful.co</p>
+            <button
+              onClick={() =>
+                (window.location.href = "mailto:lienhe@enfarm.com")
+              }
+            >
+              <p>lienhe@enfarm.com</p>
             </button>
           </div>
         </div>
