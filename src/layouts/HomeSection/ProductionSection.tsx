@@ -1,8 +1,8 @@
 import React from "react";
 import { TittleSection } from "../TittleSection";
 import style from "../../assets/styles/section.module.css";
-import ImgProd1a from "../../assets/images/img/product_1_a.png";
-import ImgProd1b from "../../assets/images/img/product_1_b.png";
+import device_box from "../../assets/images/Home/device_box.png";
+import device from "../../assets/images/Product/device.png";
 import { StatusSuccess } from "../../assets/images/svg/Icon";
 
 interface uspProps {
@@ -27,7 +27,7 @@ export const ProductionSection = () => {
         <div className="w-1/2 sm:w-full">
           <div className="w-full rounded-[32px] overflow-hidden">
             <img
-              src={ImgProd1a}
+              src={device_box}
               alt="prod 1"
               className="object-cover object-center "
             />
@@ -53,7 +53,7 @@ export const ProductionSection = () => {
         <div className="w-1/2 sm:w-full">
           <div className="w-full rounded-[32px] overflow-hidden">
             <img
-              src={ImgProd1b}
+              src={device}
               alt="prod 1"
               className="object-cover object-center "
             />

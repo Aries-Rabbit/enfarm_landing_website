@@ -3,9 +3,9 @@ import { Carousel } from "../../components/Carousel";
 import style from "../../assets/styles/section.module.css";
 import styleCarousel from "../../assets/styles/carousel.module.css";
 import { TittleSection } from "../TittleSection";
-import News_1 from "../../assets/images/img/news_1.png";
-import News_2 from "../../assets/images/img/news_2.png";
-import News_3 from "../../assets/images/img/news_3.png";
+import News_1 from "../../assets/images/Home/news_1.png";
+import News_2 from "../../assets/images/Home/news_2.png";
+import News_3 from "../../assets/images/Home/news_3.png";
 
 interface MiniPostProps {
   image: string;
@@ -20,7 +20,11 @@ export const NewsSection = () => {
       <div className="p-4">
         <div className={styleCarousel.minipost_carousel}>
           <div className="w-full overflow-hidden h-52 rounded-[32px]">
-            <img src={image} className="object-cover object-center" alt="" />
+            <img
+              src={image}
+              className="object-cover object-center h-full w-full"
+              alt=""
+            />
           </div>
           <p className={style.date}>{date}</p>
           <h3>{title}</h3>

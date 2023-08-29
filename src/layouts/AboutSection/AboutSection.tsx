@@ -1,13 +1,14 @@
 import React from "react";
 import { TittleSection } from "../TittleSection";
-import about_img_intro from "../../assets/images/img/about_img_intro.png";
+import about_img_intro from "../../assets/images/About/about_img_intro.png";
 import logo_slogen from "../../assets/images/img/logo_slogen.png";
+import style from "../../assets/styles/section.module.css";
 
 export const AboutSection = () => {
   return (
-    <>
+    <div className={style.section}>
       <TittleSection title="Giới thiệu" />
-      <div className="px-28 flex gap-4 sm:px-0 sm:flex-col">
+      <div className="flex gap-4 sm:px-0 sm:flex-col">
         <div className="w-1/3 sm:hidden">
           <img
             src={about_img_intro}
@@ -51,6 +52,6 @@ export const AboutSection = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

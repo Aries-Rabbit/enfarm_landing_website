@@ -7,7 +7,7 @@ interface TittleSectionProps {
 
 export const TittleSection = ({ title }: TittleSectionProps) => {
   return (
-    <div className="flex justify-center items-center gap-2 w-full my-4">
+    <div className="flex justify-center items-center gap-2 w-full my-4 text-center">
       <LeafIcon />
       <h1>{title}</h1>
       <LeafIcon />

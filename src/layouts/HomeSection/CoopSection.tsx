@@ -1,7 +1,7 @@
 import React from "react";
 import { TittleSection } from "../TittleSection";
 import style from "../../assets/styles/section.module.css";
-import ImgCoop from "../../assets/images/img/img_coop.jpeg";
+import ImgCoop from "../../assets/images/Home/img_coop.jpeg";
 
 export const CoopSection = () => {
   return (

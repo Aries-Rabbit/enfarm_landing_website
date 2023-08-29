@@ -55,7 +55,7 @@ const Footer = () => {
       <div className={style.footer_copyright}>
         <div className="flex sm:flex-col sm:gap-2">
           <p className="w-3/5 sm:w-full">© enfarm Agritech Pte. Ltd.</p>
-          <div className="w-2/5 sm:w-full flex justify-between">
+          <div className="w-2/5 sm:w-full flex lg:flex-col justify-between">
             <button onClick={() => window.open("tel:18009080")}>
               <p>Hotline 1800 9080</p>
             </button>

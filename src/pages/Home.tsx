@@ -1,10 +1,10 @@
 import React from "react";
 import style from "../assets/styles/home.module.css";
 import styleCarousel from "../assets/styles/carousel.module.css";
-import bg_cafe from "../assets/images/img/bg_cafe.png";
+import bg_cafe from "../assets/images/Home/bg_cafe.png";
 import gg_play from "../assets/images/img/gg_play.png";
 import app_store from "../assets/images/img/app_store.png";
-import hand from "../assets/images/img/hand.png";
+import hand from "../assets/images/Home/hand.png";
 import enfarm_logo from "../assets/images/img/enFarm_logo_web.png";
 import { Carousel } from "../components/Carousel";
 import { FeatureSection } from "../layouts/HomeSection/FeatureSection";
@@ -50,7 +50,7 @@ export const Home = () => {
               <div className={style.img_decor}>
                 <img
                   src={bg_cafe}
-                  className="object-cover object-center aspect-square h-full"
+                  className="object-cover object-center aspect-square"
                   alt=""
                 />
               </div>

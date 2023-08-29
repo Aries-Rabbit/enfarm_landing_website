@@ -45,6 +45,20 @@
   .section {
     padding: 16px;
   }
+  .section h1 {
+    font-size: 28px;
+  }
+  .prouduct_banner_content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section {
+    padding: 16px;
+  }
+  .section h1 {
+    font-size: 28px;
+  }
   .prouduct_banner_content {
     width: 90%;
   }

@@ -1,10 +1,10 @@
 import React from "react";
-import ImgPost1 from "../assets/images/img/news_1.png";
-import ImgPost2 from "../assets/images/img/news_2.png";
-import ImgPost3 from "../assets/images/img/news_3.png";
-import ImgPost4 from "../assets/images/img/knowledge_1.png";
-import ImgPost5 from "../assets/images/img/knowledge_2.png";
-import ImgPost6 from "../assets/images/img/knowledge_3.png";
+import ImgPost1 from "../assets/images/Home/news_1.png";
+import ImgPost2 from "../assets/images/Home/news_2.png";
+import ImgPost3 from "../assets/images/Home/news_3.png";
+import ImgPost4 from "../assets/images/Home/knowledge_1.png";
+import ImgPost5 from "../assets/images/Home/knowledge_2.png";
+import ImgPost6 from "../assets/images/Home/knowledge_3.png";
 
 import style from "../assets/styles/knowledge.module.css";
 

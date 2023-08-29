@@ -8,7 +8,7 @@ import {
   PlantIcon,
   WormIcon,
 } from "../../assets/images/svg/Icon";
-import screen_phone from "../../assets/images/img/enfarm-app-home-mockup.png";
+import screen_phone from "../../assets/images/Home/enfarm-app-home-mockup.png";
 import { Fade } from "react-reveal";
 
 export const FeatureSection = () => {

@@ -1,6 +1,6 @@
 .wrapper_bg {
   background-image: linear-gradient(rgba(12, 57, 0, 0) 0%, #0c3900 77.08%),
-    url("../images/img/bg_farm.jpeg");
+    url("../images/Home/bg_banner.jpeg");
   background-size: cover;
   background-position: center;
   padding: 72px 120px 0 120px;
@@ -35,6 +35,7 @@
   border-radius: 9999px;
   border: 20px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
+  flex-shrink: 0;
 }
 .elipse_small {
   width: 28px;
@@ -75,6 +76,11 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .wrapper_bg {
+    padding: 72px 32px 0 32px;
   }
 }
 @media only screen and (max-width: 1023px) {

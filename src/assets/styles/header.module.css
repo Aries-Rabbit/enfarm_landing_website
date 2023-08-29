@@ -61,6 +61,11 @@
   color: #1a1c18;
   background: #d8e7cb;
 }
+@media only screen and (max-width: 1279px) {
+  .header {
+    padding: 0 32px;
+  }
+}
 @media only screen and (max-width: 1027px) {
   .header {
     padding: 0 16px;

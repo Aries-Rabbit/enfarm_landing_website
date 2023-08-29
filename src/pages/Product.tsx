@@ -1,10 +1,10 @@
 import React from "react";
-import double_screen_mock from "../assets/images/img/double_screen_mock.png";
+import double_screen_mock from "../assets/images/Product/double_screen_mock.png";
 import gg_play from "../assets/images/img/gg_play.png";
 import app_store from "../assets/images/img/app_store.png";
 import style from "../assets/styles/product.module.css";
 import { StatusSuccess } from "../assets/images/svg/Icon";
-import ImgProd1b from "../assets/images/img/product_1_b.png";
+import device from "../assets/images/Product/device.png";
 
 interface uspProps {
   content: string;
@@ -35,7 +35,7 @@ export const Product = () => {
         </div>
       </div>
       <div className={style.section}>
-        <div className="w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8">
+        <div className="w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8 gap-4">
           <div className="w-1/2 sm:w-full">
             <img src={double_screen_mock} alt="" />
           </div>
@@ -51,7 +51,7 @@ export const Product = () => {
               cũng như <span className="font-bold">giải đáp thắc mắc</span> của
               nông dân bằng AI (trí tuệ nhân tạo).
             </p>
-            <div className="flex gap-4">
+            <div className="w-full flex lg:w-1/3 sm:w-1/3 gap-4">
               <img src={gg_play} alt="" />
               <img src={app_store} alt="" />
             </div>
@@ -59,9 +59,9 @@ export const Product = () => {
         </div>
       </div>
       <div className={style.section}>
-        <div className="w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8">
+        <div className="w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8 gap-4">
           <div className="w-1/2 sm:w-full">
-            <img src={ImgProd1b} alt="" />
+            <img src={device} alt="" />
           </div>
           <div className="w-1/2 flex flex-col gap-5 sm:w-full">
             <h1>Bộ thiết bị bón phân thông minh SF23-01</h1>
