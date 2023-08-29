@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../assets/styles/contact.module.css";
+import Swal from "sweetalert2";
 interface InputProps {
   label: string;
   mark?: string;
@@ -15,6 +16,16 @@ const Contact = () => {
         <input type="text" />
       </div>
     );
+  };
+  const handleSubmit = () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      text: "Chúng tôi đã nhận được thông tin của bạn và sẽ liên hệ với bạn trong thời gian sớm nhất",
+      showConfirmButton: true,
+      // timer: 1500,
+      confirmButtonColor: "#306B1B",
+    });
   };
   return (
     <div className={style.container}>
@@ -47,7 +58,7 @@ const Contact = () => {
               <textarea rows={5} />
             </div>
             <div className="w-full flex justify-center items-center">
-              <button>Gửi</button>
+              <button onClick={handleSubmit}>Gửi</button>
             </div>
           </div>
         </div>

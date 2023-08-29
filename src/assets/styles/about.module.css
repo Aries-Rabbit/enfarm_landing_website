@@ -55,6 +55,9 @@
     transform: translate(-50%, -50%);
     padding: 40px;
   }
+  .wrapper {
+    height: 500px;
+  }
 }
 @media only screen and (max-width: 1023px) {
   .content_about_us {
@@ -62,5 +65,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
+  }
+  .wrapper {
+    height: 500px;
   }
 }
