@@ -1,7 +1,7 @@
 import React from "react";
 import { TittleSection } from "../TittleSection";
-import about_img_intro from "../../assets/images/About/about_img_intro.png";
-import logo_slogen from "../../assets/images/img/logo_slogen.png";
+import about_img_intro from "../../assets/images/About/about_img_intro_small.png";
+import logo_slogen from "../../assets/images/img/logo_slogen_small.png";
 import style from "../../assets/styles/section.module.css";
 
 export const AboutSection = () => {

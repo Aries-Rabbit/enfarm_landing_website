@@ -4,17 +4,31 @@
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url("../images/img/bg_product.png");
+    url("../images/Product/bg_product_small.png");
   background-size: cover;
   background-position: center;
   padding: 72px 0px;
   height: 500px;
   width: 100%;
 }
+.wrapper_mini {
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #e3e3dc;
+  padding: 24px;
+}
 .knowledge_banner_content {
   background: rgba(255, 255, 255, 0.65);
   padding: 24px 32px;
   width: 50%;
+}
+.title_mini_news {
+  color: #1a1c18;
+  font-family: Be Vietnam Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
 }
 .post {
   width: 100%;
@@ -24,6 +38,7 @@
 }
 .post .title {
   color: #1a1c18;
+  font-family: Be Vietnam Pro;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -31,7 +46,6 @@
 }
 .post .content {
   color: #1a1c18;
-  font-family: Be Vietnam Pro;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -50,10 +64,10 @@
 }
 .section h1 {
   color: #306b1b;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 32px;
 }
 .section p {
   color: #1a1c18;
@@ -65,7 +79,7 @@
 .btn {
   margin-top: 12px;
   display: flex;
-  width: 191px;
+  width: 100%;
   height: 40px;
   justify-content: center;
   align-items: center;
@@ -73,8 +87,38 @@
   border-radius: 12px;
   border: 1px solid #c6c7c1;
 }
+.navigation {
+  color: #1a1c18;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+.navigation .active {
+  padding: 12px 16px;
+  color: #306b1b;
+  border-bottom: 2px solid #306b1b;
+}
+.read_more {
+  margin-top: 12px;
+  color: #0066d4;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .section {
     padding: 16px;
+  }
+  .wrapper_mini {
+    padding: 24px 0 0 0;
+    border: none;
+  }
+  .knowledge_banner_content {
+    width: 90%;
   }
 }

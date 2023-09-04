@@ -3,9 +3,9 @@ import { Carousel } from "../../components/Carousel";
 import style from "../../assets/styles/section.module.css";
 import styleCarousel from "../../assets/styles/carousel.module.css";
 import { TittleSection } from "../TittleSection";
-import News_1 from "../../assets/images/Home/news_1.png";
-import News_2 from "../../assets/images/Home/news_2.png";
-import News_3 from "../../assets/images/Home/news_3.png";
+import News_1 from "../../assets/images/Home/news_1_small.png";
+import News_2 from "../../assets/images/Home/news_2_small.png";
+import News_3 from "../../assets/images/Home/news_3_small.png";
 
 interface MiniPostProps {
   image: string;

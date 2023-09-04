@@ -1,7 +1,7 @@
 import React from "react";
 import { TittleSection } from "../TittleSection";
-import avt_co_founder from "../../assets/images/img/avt_co-founder.png";
-import avt_ceo from "../../assets/images/img/avt_ceo.png";
+import avt_co_founder from "../../assets/images/About/avt_co-founder_small.png";
+import avt_ceo from "../../assets/images/About/avt_ceo_small.png";
 
 interface CardInforProps {
   image: string;

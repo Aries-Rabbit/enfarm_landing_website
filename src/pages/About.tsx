@@ -2,18 +2,19 @@ import React from "react";
 import style from "../assets/styles/about.module.css";
 import styleSection from "../assets/styles/section.module.css";
 import { Carousel } from "../components/Carousel";
-import fruit_1 from "../assets/images/About/fruit_1.png";
-import fruit_2 from "../assets/images/About/fruit_2.png";
-import fruit_3 from "../assets/images/About/fruit_3.png";
-import fruit_4 from "../assets/images/About/fruit_4.png";
-import fruit_5 from "../assets/images/About/fruit_5.png";
-import fruit_6 from "../assets/images/About/fruit_6.png";
-import fruit_7 from "../assets/images/About/fruit_7.png";
-import fruit_8 from "../assets/images/About/fruit_8.png";
+import fruit_1 from "../assets/images/About/fruit_1_small.png";
+import fruit_2 from "../assets/images/About/fruit_2_small.png";
+import fruit_3 from "../assets/images/About/fruit_3_small.png";
+import fruit_4 from "../assets/images/About/fruit_4_small.png";
+import fruit_5 from "../assets/images/About/fruit_5_small.png";
+import fruit_6 from "../assets/images/About/fruit_6_small.png";
+import fruit_7 from "../assets/images/About/fruit_7_small.png";
+import fruit_8 from "../assets/images/About/fruit_8_small.png";
 import { AboutSection } from "../layouts/AboutSection/AboutSection";
 import { VisionSection } from "../layouts/AboutSection/VisionSection";
 import { MissionSection } from "../layouts/AboutSection/MissionSection";
 import { PersonSection } from "../layouts/AboutSection/PersonSection";
+import { ProgressiveImg } from "../components/ProgressiveImg";
 
 const About = () => {
   return (

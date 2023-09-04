@@ -16,7 +16,6 @@ export const store = configureStore({
   reducer: {
     layoutSlice,
   },
-  // devTools: false,
 });
 
 root.render(

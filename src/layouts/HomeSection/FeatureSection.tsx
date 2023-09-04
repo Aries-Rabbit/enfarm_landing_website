@@ -8,8 +8,9 @@ import {
   PlantIcon,
   WormIcon,
 } from "../../assets/images/svg/Icon";
-import screen_phone from "../../assets/images/Home/enfarm-app-home-mockup.png";
+import enfarm_mockup from "../../assets/images/Home/enfarm_mockup.png";
 import { Fade } from "react-reveal";
+import { ProgressiveImg } from "../../components/ProgressiveImg";
 
 export const FeatureSection = () => {
   return (
@@ -33,7 +34,11 @@ export const FeatureSection = () => {
           </Fade>
         </div>
         <div className={style.content_child}>
-          <img src={screen_phone} alt="screen_phone" />
+          <ProgressiveImg
+            hash={"WDLOWWNG4Ut68xs;00a_%3ax%3jb}TjYI:WXIqj[00ju-qf6t8ax"}
+            src={enfarm_mockup}
+            className="w-full"
+          />
         </div>
         <div className={style.content_child}>
           <Fade bottom>

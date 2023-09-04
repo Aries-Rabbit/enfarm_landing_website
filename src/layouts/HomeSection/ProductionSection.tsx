@@ -1,8 +1,8 @@
 import React from "react";
 import { TittleSection } from "../TittleSection";
 import style from "../../assets/styles/section.module.css";
-import device_box from "../../assets/images/Home/device_box.png";
-import device from "../../assets/images/Product/device.png";
+import device_box from "../../assets/images/Home/device_box_small.png";
+import device from "../../assets/images/Product/device_small.png";
 import { StatusSuccess } from "../../assets/images/svg/Icon";
 
 interface uspProps {

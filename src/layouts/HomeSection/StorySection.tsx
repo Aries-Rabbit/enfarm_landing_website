@@ -3,7 +3,7 @@ import style from "../../assets/styles/section.module.css";
 import styleCarousel from "../../assets/styles/carousel.module.css";
 import { TittleSection } from "../TittleSection";
 import { Carousel } from "../../components/Carousel";
-import img_story_1 from "../../assets/images/Home/img_story_1.png";
+import img_story_1 from "../../assets/images/Home/img_story_1_small.png";
 
 interface MiniPostProps {
   image: string;

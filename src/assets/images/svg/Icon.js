@@ -189,3 +189,19 @@ export const DownloadIcon = ({ className = "" }) => (
     />
   </svg>
 );
+export const CaretRight = ({ className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={16}
+    height={16}
+    fill="none"
+    className={twMerge("", className)}
+  >
+    <path
+      fill="#0066D5"
+      fillRule="evenodd"
+      d="M5.529 2.529c.26-.26.682-.26.942 0l5 5c.26.26.26.682 0 .942l-5 5a.667.667 0 1 1-.942-.943L10.057 8 5.53 3.47a.667.667 0 0 1 0-.942Z"
+      clipRule="evenodd"
+    />
+  </svg>
+);

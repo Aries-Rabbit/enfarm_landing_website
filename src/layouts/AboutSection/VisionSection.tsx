@@ -2,7 +2,7 @@ import React from "react";
 import { TittleSection } from "../TittleSection";
 import style from "../../assets/styles/about.module.css";
 import styleSection from "../../assets/styles/section.module.css";
-import bg_cafe from "../../assets/images/Home/bg_cafe.png";
+import bg_cafe from "../../assets/images/Home/bg_cafe_small.png";
 
 export const VisionSection = () => {
   return (

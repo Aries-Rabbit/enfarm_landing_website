@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../assets/styles/home.module.css";
 import styleCarousel from "../assets/styles/carousel.module.css";
-import bg_cafe from "../assets/images/Home/bg_cafe.png";
+import bg_cafe from "../assets/images/Home/bg_cafe_small.png";
 import gg_play from "../assets/images/img/gg_play.png";
 import app_store from "../assets/images/img/app_store.png";
 import hand from "../assets/images/Home/hand.png";
@@ -15,6 +15,7 @@ import { KnowledgeSection } from "../layouts/HomeSection/KnowledgeSection";
 import { CoopSection } from "../layouts/HomeSection/CoopSection";
 import { StorySection } from "../layouts/HomeSection/StorySection";
 import { DownloadSection } from "../layouts/HomeSection/DownloadSection";
+import { ProgressiveImg } from "../components/ProgressiveImg";
 
 export const Home = () => {
   return (
@@ -48,10 +49,10 @@ export const Home = () => {
                 className={`${style.elipse_small} absolute bottom-[90px] left-[22px]`}
               ></div>
               <div className={style.img_decor}>
-                <img
+                <ProgressiveImg
+                  hash="LDF5+}.4Fd4:lR~WD*I:_L9GRnD%"
                   src={bg_cafe}
                   className="object-cover object-center aspect-square"
-                  alt=""
                 />
               </div>
             </div>
@@ -69,7 +70,7 @@ export const Home = () => {
 
           <div className="w-full flex flex-row sm:flex-col gap-[130px] sm:gap-4 py-16">
             <div className="w-1/3 sm:w-full">
-              <img src={hand} alt="" />
+              <img src={hand} alt="" className="w-full" />
             </div>
             <div className="w-2/3 sm:w-full">
               <div className="w-16 h-16 bg-white rounded-2xl flex justify-center items-center">

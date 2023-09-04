@@ -4,7 +4,7 @@ import gg_play from "../assets/images/img/gg_play.png";
 import app_store from "../assets/images/img/app_store.png";
 import style from "../assets/styles/product.module.css";
 import { StatusSuccess } from "../assets/images/svg/Icon";
-import device from "../assets/images/Product/device.png";
+import device from "../assets/images/Product/device_small.png";
 
 interface uspProps {
   content: string;
@@ -35,11 +35,14 @@ export const Product = () => {
         </div>
       </div>
       <div className={style.section}>
-        <div className="w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8 gap-4">
-          <div className="w-1/2 sm:w-full">
+        <div className="mt-24 sm:mt-10 w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] gap-4 relative">
+          <div className="absolute top-1/2 -translate-y-1/2 left-8 sm:hidden lg:hidden">
             <img src={double_screen_mock} alt="" />
           </div>
-          <div className="w-1/2 flex flex-col gap-5 sm:w-full">
+          <div className="w-1/2 flex justify-center sm:w-full">
+            <img src={double_screen_mock} alt="" className="hidden lg:block" />
+          </div>
+          <div className="w-1/2 flex flex-col gap-5 sm:w-full p-8">
             <h1>App enfarm - Ứng dụng AI trong nông nghiệp</h1>
             <p>
               Ứng dụng nông nghiệp thông minh enfarm tích hợp các chức năng dự
@@ -59,7 +62,7 @@ export const Product = () => {
         </div>
       </div>
       <div className={style.section}>
-        <div className="w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8 gap-4">
+        <div className="mt-14 w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8 gap-4">
           <div className="w-1/2 sm:w-full">
             <img src={device} alt="" />
           </div>

@@ -1,6 +1,6 @@
 .wrapper_bg {
   background-image: linear-gradient(rgba(12, 57, 0, 0) 0%, #0c3900 77.08%),
-    url("../images/Home/bg_banner.jpeg");
+    url("../images/Home/bg_banner_small.jpeg");
   background-size: cover;
   background-position: center;
   padding: 72px 120px 0 120px;

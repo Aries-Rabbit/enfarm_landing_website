@@ -4,7 +4,7 @@
       rgba(0, 0, 0, 0.4) 0%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url("../images/About/bg_page_prod.png");
+    url("../images/About/bg_page_prod_small.png");
   background-size: cover;
   background-position: center;
   padding: 72px 0px;
