@@ -20,6 +20,9 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border-radius: 32px;
+  overflow: hidden;
+  background-color: #f1f1ea;
 }
 .minipost_carousel .title {
   color: #1a1c18;
@@ -96,6 +99,8 @@
   position: absolute;
   top: 20%;
   left: 100%;
+}
+.minipost_carousel {
 }
 @media only screen and (max-width: 767px) {
   .btn_slider_left {

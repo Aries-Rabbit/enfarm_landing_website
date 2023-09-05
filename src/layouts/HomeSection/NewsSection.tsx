@@ -6,6 +6,7 @@ import { TittleSection } from "../TittleSection";
 import News_1 from "../../assets/images/Home/news_1_small.png";
 import News_2 from "../../assets/images/Home/news_2_small.png";
 import News_3 from "../../assets/images/Home/news_3_small.png";
+import { CaretRight } from "../../assets/images/svg/Icon";
 
 interface MiniPostProps {
   image: string;
@@ -15,20 +16,32 @@ interface MiniPostProps {
 }
 
 export const NewsSection = () => {
+  const shorten = (title: string, maxLength: number) => {
+    if (title.length > maxLength) {
+      return title.slice(0, maxLength) + "...";
+    }
+    return title;
+  };
   const MiniPost = ({ image, date, title, content }: MiniPostProps) => {
     return (
       <div className="p-4">
         <div className={styleCarousel.minipost_carousel}>
-          <div className="w-full overflow-hidden h-52 rounded-[32px]">
+          <div className="w-full h-52">
             <img
               src={image}
               className="object-cover object-center h-full w-full"
               alt=""
             />
           </div>
-          <p className={style.date}>{date}</p>
-          <h3>{title}</h3>
-          <p>{content}</p>
+          <div className="p-4">
+            <p className={style.date}>{date}</p>
+            <h3 className={style.title}>{shorten(title, 50)}</h3>
+            <p className={style.content}>{shorten(content, 130)}</p>
+            <button className={style.read_more}>
+              Đọc tiếp
+              <CaretRight />
+            </button>
+          </div>
         </div>
       </div>
     );

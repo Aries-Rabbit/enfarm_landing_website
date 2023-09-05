@@ -6,6 +6,8 @@ import gg_play from "../assets/images/img/gg_play.png";
 import app_store from "../assets/images/img/app_store.png";
 import hand from "../assets/images/Home/hand.png";
 import enfarm_logo from "../assets/images/img/enFarm_logo_web.png";
+import shapewave from "../assets/images/Home/shapewave.png";
+import coffee_illustration from "../assets/images/Home/coffee-illustration.png";
 import { Carousel } from "../components/Carousel";
 import { FeatureSection } from "../layouts/HomeSection/FeatureSection";
 import { ProductionSection } from "../layouts/HomeSection/ProductionSection";
@@ -84,10 +86,16 @@ export const Home = () => {
                   bệnh, sổ tay nông nghiệp điện tử cũng như giải đáp thắc mắc
                   của nông dân bằng AI (trí tuệ nhân tạo).
                 </article>
+                <div className="flex justify-end w-full">
+                  <img src={coffee_illustration} alt="" />
+                </div>
               </div>
             </div>
           </div>
         </nav>
+      </div>
+      <div>
+        <img src={shapewave} alt="" />
       </div>
 
       <main>

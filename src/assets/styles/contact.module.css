@@ -37,6 +37,9 @@
   background: #306b1b;
   color: #fff;
 }
+.container_form button:disabled {
+  background: grey;
+}
 .form {
   margin-bottom: 16px;
 }
