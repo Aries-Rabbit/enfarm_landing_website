@@ -25,11 +25,13 @@ export const NewsSection = () => {
   const MiniPost = ({ image, date, title, content }: MiniPostProps) => {
     return (
       <div className="p-4">
-        <div className={styleCarousel.minipost_carousel}>
-          <div className="w-full h-52">
+        <div
+          className={`${styleCarousel.minipost_carousel} ${styleCarousel.bg_color}`}
+        >
+          <div className="w-full overflow-hidden h-52">
             <img
               src={image}
-              className="object-cover object-center h-full w-full"
+              className="object-cover object-top h-full w-full"
               alt=""
             />
           </div>

@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  padding: 4px 16px;
+  padding: 8px 16px;
   cursor: pointer;
 }
 .navItem.active {

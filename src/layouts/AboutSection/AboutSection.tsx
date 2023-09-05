@@ -12,7 +12,7 @@ export const AboutSection = () => {
         <div className="w-1/3 sm:hidden">
           <img
             src={about_img_intro}
-            className="object-cover object-center h-full rounded-[32px]"
+            className="object-cover object-left h-full rounded-[32px]"
             alt=""
           />
         </div>

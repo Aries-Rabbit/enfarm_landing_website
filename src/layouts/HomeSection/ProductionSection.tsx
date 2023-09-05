@@ -45,7 +45,7 @@ export const ProductionSection = () => {
         </div>
       </div>
       <div className="w-full flex sm:flex-col-reverse gap-8 sm:gap-0 mt-8">
-        <div className="w-1/2 sm:w-full flex flex-col justify-center gap-2">
+        <div className="w-1/2 sm:w-full flex flex-col justify-center gap-9">
           <USP content="Thiết bị đo đa nhiệm: NPK, pH, độ ẩm" />
           <USP content="Sensor ‘túc trực’ trong đất" />
           <USP content="Kết hợp với ứng dụng enfarm nhằm đo và theo dõi thông số tiện lợi" />

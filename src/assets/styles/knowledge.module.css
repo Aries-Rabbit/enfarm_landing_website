@@ -88,6 +88,8 @@
   border: 1px solid #c6c7c1;
 }
 .navigation {
+  margin-top: 12px;
+  margin-bottom: 72px;
   color: #1a1c18;
   font-size: 16px;
   font-style: normal;
@@ -120,5 +122,10 @@
   }
   .knowledge_banner_content {
     width: 90%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .section {
+    padding: 16px;
   }
 }

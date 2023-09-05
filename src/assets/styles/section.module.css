@@ -1,5 +1,5 @@
 .section {
-  padding: 32px 120px;
+  padding: 72px 120px;
   width: 100%;
 }
 .section h1 {
@@ -39,10 +39,10 @@
 /* product */
 .product_usp {
   color: #306b1b;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 32px;
+  line-height: 28px;
 }
 /* vison */
 .vision {

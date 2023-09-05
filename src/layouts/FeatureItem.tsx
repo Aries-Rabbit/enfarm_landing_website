@@ -11,7 +11,9 @@ interface FeatureItemProps {
 export const FeatureItem = ({ iconSvg, title, content }: FeatureItemProps) => {
   return (
     <div className={style.feature_item}>
-      <div>{iconSvg}</div>
+      <div className="h-12 w-12 bg-[#FFDDB7] rounded-full flex justify-center items-center">
+        {iconSvg}
+      </div>
       <h4>{title}</h4>
       <p>{content}</p>
     </div>

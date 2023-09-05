@@ -21,7 +21,7 @@ const About = () => {
     <div className={style.container}>
       <div className={style.wrapper}>
         <div className={style.content_about_us}>
-          <h1>Về chúng tôi</h1>
+          <h1 className="text-[#306B1B]">Về chúng tôi</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl

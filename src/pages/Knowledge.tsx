@@ -72,7 +72,7 @@ export const Knowledge = () => {
       <div className={style.wrapper}>
         <div className="w-full h-full flex justify-center items-center">
           <div className={style.knowledge_banner_content}>
-            <h1 className="text-center">Tri thức</h1>
+            <h1 className="text-center text-[#306B1B]">Tri thức</h1>
             <p className="text-center">Cập nhật tin tức mới nhất từ enfarm</p>
           </div>
         </div>
@@ -102,8 +102,10 @@ export const Knowledge = () => {
           {tabsKnowledge === 0 && (
             <div className="flex w-full gap-[32px] sm:w-full sm:flex-col lg:w-full lg:flex-col mt-10 sm:mt-3">
               <div className="w-2/3 sm:w-full lg:w-full">
-                <h1>Tri thức</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 mt-4">
+                <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 py-6 relative">
+                  <div className="absolute top-0 -translate-y-1/2 z-[2] bg-white px-2">
+                    <h1>Tri thức</h1>
+                  </div>
                   <div className="col-span-1 rounded-[32px] overflow-hidden bg-[#F1F1EA]">
                     <MiniPostKnow
                       image={ImgPost1}
@@ -194,7 +196,7 @@ export const Knowledge = () => {
             <div className="flex w-full gap-[32px] sm:w-full sm:flex-col lg:w-full lg:flex-col mt-10 sm:mt-3">
               <div className="w-full">
                 <h1>Tri thức</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 mt-4">
+                <div className="grid grid-cols-3 sm:grid-cols-1 gap-8 mt-4">
                   <div className="col-span-1 rounded-[32px] overflow-hidden bg-[#F1F1EA]">
                     <MiniPostKnow
                       image={ImgPost1}
@@ -251,7 +253,7 @@ export const Knowledge = () => {
             <div className="flex w-full gap-[32px] sm:w-full sm:flex-col lg:w-full lg:flex-col mt-10 sm:mt-3">
               <div className="w-full">
                 <h1>Tin tức</h1>
-                <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 mt-4">
+                <div className="grid grid-cols-3 sm:grid-cols-1 gap-8 mt-4">
                   <div className="col-span-1 rounded-[32px] overflow-hidden bg-[#F1F1EA]">
                     <MiniPostKnow
                       image={ImgPost1}

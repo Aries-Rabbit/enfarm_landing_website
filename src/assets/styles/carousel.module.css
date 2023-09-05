@@ -22,6 +22,9 @@
   gap: 8px;
   border-radius: 32px;
   overflow: hidden;
+  background-color: #fff;
+}
+.minipost_carousel.bg_color {
   background-color: #f1f1ea;
 }
 .minipost_carousel .title {

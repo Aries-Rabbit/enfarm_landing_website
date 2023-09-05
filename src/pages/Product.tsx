@@ -25,7 +25,7 @@ export const Product = () => {
       <div className={style.wrapper}>
         <div className="w-full h-full flex justify-center items-center">
           <div className={style.prouduct_banner_content}>
-            <h1 className="text-center">Sản phẩm</h1>
+            <h1 className="text-center text-[#306B1B]">Sản phẩm</h1>
             <p className="text-center">
               Tất cả sản phẩm được phát triển bởi enfarm nhằm nhằm tìm giải pháp
               nâng cao thu nhập cho người nông dân đồng thời đảm bảo an toàn

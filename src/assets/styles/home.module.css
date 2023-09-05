@@ -8,6 +8,7 @@
 .wrapper {
   width: 100%;
   min-height: 628px;
+  margin-top: 52px;
 }
 .wrapper .big_title {
   color: #fff;
