@@ -5,7 +5,7 @@ import ImgCoop from "../../assets/images/Home/img_coop_small.jpeg";
 
 export const CoopSection = () => {
   return (
-    <div className={style.section}>
+    <div className={`${style.section} bg-[#F1F1EA]`}>
       <TittleSection title="Đối tác của enfarm" />
       <div className="w-full flex sm:flex-col gap-8">
         <div className="w-1/2 sm:w-full">
