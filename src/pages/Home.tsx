@@ -72,7 +72,7 @@ export const Home = () => {
 
           <div className="w-full flex flex-row sm:flex-col gap-[130px] sm:gap-4 py-16">
             <div className="w-1/3 sm:w-full">
-              <img src={hand} alt="" className="w-full" />
+              <img src={hand} alt="" className="w-full h-4/5" />
             </div>
             <div className="w-2/3 sm:w-full">
               <div className="w-16 h-16 bg-white rounded-2xl flex justify-center items-center">
