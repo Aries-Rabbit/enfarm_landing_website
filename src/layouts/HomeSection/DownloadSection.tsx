@@ -9,7 +9,7 @@ export const DownloadSection = () => {
   return (
     <div className={style.section} id="download">
       <div className="relative w-full">
-        <img src={enfarm_mockup} alt="" className="sm:hidden" />
+        <img src={enfarm_mockup} alt="" className="sm:hidden w-full" />
         <div className="absolute top-1/2 left-24 -translate-y-1/2 w-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:top-0 sm:hidden">
           <div className="w-16 h-16 rounded-2xl flex justify-center items-center">
             <img loading="lazy" src={enfarm_logo} alt="enfarm logo" />
