@@ -42,7 +42,7 @@ export const Product = () => {
           <div className="w-1/2 flex justify-center sm:w-full">
             <img src={double_screen_mock} alt="" className="hidden lg:block" />
           </div>
-          <div className="w-1/2 flex flex-col gap-5 sm:w-full p-8">
+          <div className="w-1/2 flex flex-col items-center justify-center gap-5 sm:w-full p-8 h-[480px]">
             <h1>App enfarm - Ứng dụng AI trong nông nghiệp</h1>
             <p>
               Ứng dụng nông nghiệp thông minh enfarm tích hợp các chức năng dự
@@ -62,7 +62,7 @@ export const Product = () => {
         </div>
       </div>
       <div className={style.section}>
-        <div className="mt-14 w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8 gap-4">
+        <div className="mt-14 w-full flex sm:flex-col items-center rounded-[48px] bg-[#EEF3E5] p-8 gap-4 h-[480px] sm:h-full">
           <div className="w-1/2 sm:w-full">
             <img src={device} alt="" />
           </div>

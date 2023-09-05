@@ -24,7 +24,7 @@ export const Home = () => {
     <div className={style.container}>
       <div className={style.wrapper_bg}>
         <nav className={style.wrapper}>
-          <div className="w-full flex flex-row gap-[52px] sm:flex-col">
+          <div className="w-full flex flex-row gap-[52px] sm:flex-col mb-10">
             <div className="w-2/3 sm:w-full">
               <h1 className={style.big_title}>
                 enfarm <br /> Công nghệ vì nhà nông

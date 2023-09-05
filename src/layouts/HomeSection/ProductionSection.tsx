@@ -4,6 +4,7 @@ import style from "../../assets/styles/section.module.css";
 import device_box from "../../assets/images/Home/device_box_small.png";
 import device from "../../assets/images/Product/device_small.png";
 import { StatusSuccess } from "../../assets/images/svg/Icon";
+import { Fade } from "react-reveal";
 
 interface uspProps {
   content: string;
@@ -26,11 +27,13 @@ export const ProductionSection = () => {
       <div className="w-full flex sm:flex-col gap-8">
         <div className="w-1/2 sm:w-full">
           <div className="w-full rounded-[32px] overflow-hidden">
-            <img
-              src={device_box}
-              alt="prod 1"
-              className="object-cover object-center "
-            />
+            <Fade bottom>
+              <img
+                src={device_box}
+                alt="prod 1"
+                className="object-cover object-center "
+              />
+            </Fade>
           </div>
         </div>
         <div className="w-1/2 sm:w-full flex flex-col justify-center gap-2">
@@ -52,11 +55,13 @@ export const ProductionSection = () => {
         </div>
         <div className="w-1/2 sm:w-full">
           <div className="w-full rounded-[32px] overflow-hidden">
-            <img
-              src={device}
-              alt="prod 1"
-              className="object-cover object-center "
-            />
+            <Fade bottom>
+              <img
+                src={device}
+                alt="prod 1"
+                className="object-cover object-center w-full"
+              />
+            </Fade>
           </div>
         </div>
       </div>
