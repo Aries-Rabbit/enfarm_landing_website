@@ -42,7 +42,7 @@ export const Product = () => {
           <div className="w-1/2 flex justify-center sm:w-full">
             <img src={double_screen_mock} alt="" className="hidden lg:block" />
           </div>
-          <div className="w-1/2 flex flex-col items-center justify-center gap-5 sm:w-full p-8 h-[480px]">
+          <div className="w-1/2 flex flex-col items-center justify-center gap-5 sm:w-full p-8 h-[480px] sm:h-full">
             <h1>App enfarm - Ứng dụng AI trong nông nghiệp</h1>
             <p>
               Ứng dụng nông nghiệp thông minh enfarm tích hợp các chức năng dự
@@ -54,7 +54,7 @@ export const Product = () => {
               cũng như <span className="font-bold">giải đáp thắc mắc</span> của
               nông dân bằng AI (trí tuệ nhân tạo).
             </p>
-            <div className="w-full flex lg:w-1/3 sm:w-1/3 gap-4">
+            <div className="w-full flex sm:justify-end lg:w-1/3 sm:w-1/3 gap-4">
               <img src={gg_play} alt="" />
               <img src={app_store} alt="" />
             </div>
