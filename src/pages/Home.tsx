@@ -94,8 +94,8 @@ export const Home = () => {
           </div>
         </nav>
       </div>
-      <div>
-        <img src={shapewave} alt="" />
+      <div className="w-full">
+        <img src={shapewave} alt="" className="w-full" />
       </div>
 
       <main>
