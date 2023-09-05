@@ -99,7 +99,7 @@ export const Header = () => {
                 isInverted ? "text-black" : "text-white"
               } sm:hidden`}
             >
-              VI | EN
+              <button className="font-bold">VI</button> | <button>EN</button>
             </div>
             <div>
               <Link
