@@ -103,8 +103,7 @@
   top: 20%;
   left: 100%;
 }
-.minipost_carousel {
-}
+
 @media only screen and (max-width: 767px) {
   .btn_slider_left {
     display: none;

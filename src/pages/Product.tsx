@@ -54,9 +54,9 @@ export const Product = () => {
               cũng như <span className="font-bold">giải đáp thắc mắc</span> của
               nông dân bằng AI (trí tuệ nhân tạo).
             </p>
-            <div className="w-full flex sm:justify-end lg:w-1/3 sm:w-1/3 gap-4">
-              <img src={gg_play} alt="" />
-              <img src={app_store} alt="" />
+            <div className="w-full flex gap-4">
+              <img loading="lazy" src={gg_play} alt="" className="w-1/2" />
+              <img loading="lazy" src={app_store} alt="" className="w-1/2" />
             </div>
           </div>
         </div>

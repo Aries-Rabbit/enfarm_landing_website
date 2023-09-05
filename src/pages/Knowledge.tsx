@@ -100,7 +100,7 @@ export const Knowledge = () => {
             </button>
           </div>
           {tabsKnowledge === 0 && (
-            <div className="flex w-full gap-[32px] sm:w-full sm:flex-col lg:w-full lg:flex-col mt-10 mb-20 sm:mt-3">
+            <div className="flex w-full gap-[32px] sm:w-full sm:flex-col lg:w-full lg:flex-col mt-10 mb-20 sm:mt-3 sm:gap-20">
               <div className="w-2/3 sm:w-full lg:w-full">
                 <div className="grid grid-cols-2 sm:grid-cols-1 gap-8 py-6 relative">
                   <div className="absolute top-0 -translate-y-1/2 z-[2] bg-white px-2">

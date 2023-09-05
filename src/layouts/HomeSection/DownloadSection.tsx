@@ -20,9 +20,9 @@ export const DownloadSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </article>
-            <div className="w-full flex lg:w-1/3 sm:w-1/3 mt-9 gap-4">
-              <img loading="lazy" src={gg_play} alt="" />
-              <img loading="lazy" src={app_store} alt="" />
+            <div className="w-full flex mt-9 gap-4">
+              <img loading="lazy" src={gg_play} alt="" className="w-1/2" />
+              <img loading="lazy" src={app_store} alt="" className="w-1/2" />
             </div>
           </div>
         </div>
@@ -36,9 +36,9 @@ export const DownloadSection = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </article>
-            <div className="w-full flex lg:w-1/3 sm:w-1/3 mt-9 gap-4">
-              <img loading="lazy" src={gg_play} alt="" />
-              <img loading="lazy" src={app_store} alt="" />
+            <div className="w-full flex sm:flex-col sm:items-center mt-9 gap-4">
+              <img loading="lazy" src={gg_play} alt="" className="w-1/2" />
+              <img loading="lazy" src={app_store} alt="" className="w-1/2" />
             </div>
           </div>
         </div>
