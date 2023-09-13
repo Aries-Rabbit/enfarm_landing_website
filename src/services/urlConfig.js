@@ -1,30 +1,33 @@
 import axios from "axios";
 
-export const http = axios.create({
-  baseURL: "http://118.69.83.47:8051",
+export const https = axios.create({
+  baseURL: "https://api.enfarm.com",
 });
+
 // Add a request interceptor
-http.interceptors.request.use(
+https.interceptors.request.use(
   (config) => {
     let newConfig = {
       ...config,
+      // Bạn có thể thêm các cài đặt khác tại đây nếu cần
     };
 
     return newConfig;
   },
   (error) => {
-    // Do something with request error
+    // Xử lý lỗi yêu cầu nếu cần
     return Promise.reject(error);
   }
 );
 
 // Add a response interceptor
-http.interceptors.response.use(
+https.interceptors.response.use(
   (response) => {
     if (response && response.data) return response.data;
     return response;
   },
   (err) => {
+    // Xử lý lỗi phản hồi nếu cần
     return err;
   }
 );

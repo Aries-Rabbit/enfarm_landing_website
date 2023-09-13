@@ -11,7 +11,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleSubmit = async () => {
-    if (name === "" || email === "" || phone === "" || message === "") {
+    if (name === "" || phone === "" || message === "") {
       Swal.fire({
         position: "center",
         icon: "warning",
@@ -21,36 +21,39 @@ const Contact = () => {
       });
       return;
     }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      Swal.fire({
-        position: "center",
-        icon: "warning",
-        text: "Email không đúng định dạng",
-        showConfirmButton: true,
-        confirmButtonColor: "#306B1B",
-      });
-      return;
-    }
+
     setSending(true);
-    await contactService.sendEmail({
+    const res: any = await contactService.sendEmail({
       name: name,
       email: email,
       phone: phone,
       content: message,
     });
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      text: "Chúng tôi đã nhận được thông tin của bạn và sẽ liên hệ với bạn trong thời gian sớm nhất",
-      showConfirmButton: true,
-      confirmButtonColor: "#306B1B",
-    });
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
-    setSending(false);
+
+    if (parseInt(res.status_code) === 200) {
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        text: "Chúng tôi đã nhận được thông tin của bạn và sẽ liên hệ với bạn trong thời gian sớm nhất",
+        showConfirmButton: true,
+        confirmButtonColor: "#306B1B",
+      });
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+      setSending(false);
+    } else {
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        text: "Gửi thất bại, vui lòng thử lại sau",
+        showConfirmButton: false,
+        timer: 2000,
+      });
+      setSending(false);
+      return;
+    }
   };
 
   return (
@@ -82,10 +85,7 @@ const Contact = () => {
             <div className="flex sm:flex-col gap-3">
               <div className="w-1/2 sm:w-full">
                 <div className={style.form}>
-                  <div className={style.label}>
-                    Email
-                    <span> *</span>
-                  </div>
+                  <div className={style.label}>Email</div>
                   <input
                     value={email}
                     onChange={(event) => {

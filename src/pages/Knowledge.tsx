@@ -70,10 +70,10 @@ export const Knowledge = () => {
   return (
     <div className={style.container}>
       <div className={style.wrapper}>
-        <div className="w-full h-full flex justify-center items-center">
+        <div className="w-full h-full relative">
           <div className={style.knowledge_banner_content}>
-            <h1 className="text-center text-[#306B1B]">Tri thức</h1>
-            <p className="text-center">Cập nhật tin tức mới nhất từ enfarm</p>
+            <h1>Tri thức</h1>
+            <p>Cập nhật tin tức mới nhất từ enfarm</p>
           </div>
         </div>
       </div>

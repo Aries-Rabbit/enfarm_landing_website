@@ -20,16 +20,6 @@ export const VisionSection = () => {
             </div>
           </div>
           <div className="w-1/2 sm:w-full">
-            <div className="w-full flex justify-around">
-              <div className="flex flex-col gap-4 items-center">
-                <div className={style.circle_custom}>15 -20%</div>
-                <h3 className="text-white">Gia tăng năng suất</h3>
-              </div>
-              <div className="flex flex-col gap-4 items-center">
-                <div className={style.circle_custom}>15 -20%</div>
-                <h3 className="text-white">Giảm chi phí phân bón</h3>
-              </div>
-            </div>
             <div className="w-4/5 mx-auto mt-4 sm:w-full">
               <div className={style.content_vision}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

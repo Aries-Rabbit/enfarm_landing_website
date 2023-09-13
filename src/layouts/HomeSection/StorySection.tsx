@@ -31,7 +31,7 @@ export const StorySection = () => {
   };
   return (
     <div className={style.section}>
-      <TittleSection title="Câu chuyện thành công từ nhà nông" />
+      <TittleSection title="Nhà nông thành công cùng enfarm" />
       <Carousel autoplaySpeed={1000000000}>
         <MiniPost
           image={img_story_1}

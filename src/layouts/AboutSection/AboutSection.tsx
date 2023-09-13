@@ -1,12 +1,12 @@
 import React from "react";
 import { TittleSection } from "../TittleSection";
-import about_img_intro from "../../assets/images/About/about_img_intro_small.png";
+import about_img_intro from "../../assets/images/About/sau_rieng_small.png";
 import logo_slogen from "../../assets/images/img/logo_slogen_small.png";
 import style from "../../assets/styles/section.module.css";
 
 export const AboutSection = () => {
   return (
-    <div className={style.section}>
+    <div className="px-[120px] sm:px-0 2xl:px-0">
       <TittleSection title="Giới thiệu" />
       <div className="flex gap-4 sm:px-0 sm:flex-col">
         <div className="w-1/3 sm:hidden">

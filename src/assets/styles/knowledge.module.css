@@ -18,9 +18,17 @@
   padding: 24px;
 }
 .knowledge_banner_content {
-  background: rgba(255, 255, 255, 0.65);
-  padding: 24px 32px;
   width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px 20px 40px 120px;
+}
+.knowledge_banner_content h1 {
+  color: white;
+}
+.knowledge_banner_content p {
+  color: white;
 }
 .title_mini_news {
   color: #1a1c18;

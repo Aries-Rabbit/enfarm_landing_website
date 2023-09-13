@@ -1,8 +1,8 @@
-import { http } from "./urlConfig";
+import { https } from "./urlConfig";
 
 export const contactService = {
   sendEmail: (data) => {
     let uri = "/email-sender";
-    return http.post(uri, data);
+    return https.post(uri, data);
   },
 };

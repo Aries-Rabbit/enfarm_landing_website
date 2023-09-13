@@ -4,7 +4,7 @@ import styleCarousel from "../assets/styles/carousel.module.css";
 import bg_cafe from "../assets/images/Home/bg_cafe_small.png";
 import gg_play from "../assets/images/img/gg_play.png";
 import app_store from "../assets/images/img/app_store.png";
-import hand from "../assets/images/Home/hand.png";
+import hand from "../assets/images/Home/hand_hold_phone_small.png";
 import enfarm_logo from "../assets/images/img/enFarm_logo_web.png";
 import shapewave from "../assets/images/Home/shapewave.png";
 import coffee_illustration from "../assets/images/Home/coffee-illustration.png";
@@ -35,9 +35,13 @@ export const Home = () => {
                 dân các phân tích từ nhu cầu dinh dưỡng của cây trồng tới xu
                 hướng thời tiết và thị trường.
               </article>
-              <div className="w-full flex sm:w-1/3 mt-9 gap-4">
+              {/* <div className="w-full flex sm:w-1/3 mt-9 gap-4">
                 <img src={gg_play} alt="" />
                 <img src={app_store} alt="" />
+              </div> */}
+              <div className="w-full flex gap-4 mt-4">
+                <img loading="lazy" src={gg_play} alt="" className="w-1/3" />
+                <img loading="lazy" src={app_store} alt="" className="w-1/3" />
               </div>
             </div>
             <div className="w-1/3 sm:hidden relative flex justify-center items-center">
@@ -72,7 +76,11 @@ export const Home = () => {
 
           <div className="w-full flex flex-row sm:flex-col gap-[130px] sm:gap-4 py-16">
             <div className="w-1/3 sm:w-full">
-              <img src={hand} alt="" className="w-full h-4/5" />
+              <img
+                src={hand}
+                alt=""
+                className="w-full h-[562px] rounded-se-[320px]"
+              />
             </div>
             <div className="w-2/3 sm:w-full">
               <div className="w-16 h-16 bg-white rounded-2xl flex justify-center items-center">
